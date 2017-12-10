@@ -9,17 +9,40 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+  
+  // MARK: - IBOutlets
+    @IBOutlet weak var handWrittenImage: HandwrittenImage!
+  
+  // MARK: - View Life Cycle
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+  
+  // MARK: - Button
+  @IBAction func pushButton(_ sender: UIButton) {
+    handWrittenImage.setNeedsDisplay()
+  }
+  
 }
 
+// MARK: - IBActions
+extension ViewController {
+  
+  @IBAction func pickImage(_ sender: Any) {
+    let pickerController = UIImagePickerController()
+    pickerController.delegate = self
+    pickerController.sourceType = .savedPhotosAlbum
+    present(pickerController, animated: true)
+  }
+}
+
+// MARK: - UIImagePickerControllerDelegate
+extension ViewController: UIImagePickerControllerDelegate {
+  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    dismiss(animated: true)
+  }
+}
+
+// MARK: - UINavigationControllerDelegate
+extension ViewController: UINavigationControllerDelegate {
+}
