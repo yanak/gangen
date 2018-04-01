@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87035F8320719D1C001DC6FE /* HandwrittenImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87035F8220719D1C001DC6FE /* HandwrittenImage.swift */; };
+		873E250820704D6C00BB9EC1 /* gan.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 873E250720704D6C00BB9EC1 /* gan.mlmodel */; };
 		876EAF6C1FDCE88B00205269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876EAF6B1FDCE88B00205269 /* AppDelegate.swift */; };
 		876EAF811FDCE88B00205269 /* GangenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876EAF801FDCE88B00205269 /* GangenTests.swift */; };
 		87837C791FDD08AA006A59ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87837C771FDD08AA006A59ED /* ViewController.swift */; };
-		87837C7E1FDD08BC006A59ED /* gan.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 87837C7B1FDD08BC006A59ED /* gan.mlmodel */; };
 		87837C7F1FDD08BC006A59ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87837C7C1FDD08BC006A59ED /* Assets.xcassets */; };
 		87837C831FDD08DE006A59ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87837C811FDD08DE006A59ED /* Main.storyboard */; };
 		87837C841FDD08DE006A59ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87837C821FDD08DE006A59ED /* LaunchScreen.storyboard */; };
-		87837C881FDD0F06006A59ED /* HandwrittenImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87837C871FDD0F06006A59ED /* HandwrittenImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		87035F8220719D1C001DC6FE /* HandwrittenImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandwrittenImage.swift; sourceTree = "<group>"; };
+		873E250720704D6C00BB9EC1 /* gan.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = gan.mlmodel; sourceTree = "<group>"; };
 		876EAF681FDCE88B00205269 /* Gangen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gangen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		876EAF6B1FDCE88B00205269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		876EAF7C1FDCE88B00205269 /* GangenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GangenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,11 +37,9 @@
 		876EAF821FDCE88B00205269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87837C761FDD08AA006A59ED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87837C771FDD08AA006A59ED /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		87837C7B1FDD08BC006A59ED /* gan.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = gan.mlmodel; sourceTree = "<group>"; };
 		87837C7C1FDD08BC006A59ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87837C811FDD08DE006A59ED /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		87837C821FDD08DE006A59ED /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		87837C871FDD0F06006A59ED /* HandwrittenImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HandwrittenImage.swift; path = ../../Gangen_Old/Gangen/HandwrittenImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 		876EAF6A1FDCE88B00205269 /* Gangen */ = {
 			isa = PBXGroup;
 			children = (
-				87837C871FDD0F06006A59ED /* HandwrittenImage.swift */,
+				87035F8220719D1C001DC6FE /* HandwrittenImage.swift */,
 				87837C821FDD08DE006A59ED /* LaunchScreen.storyboard */,
 				87837C811FDD08DE006A59ED /* Main.storyboard */,
 				87837C7A1FDD08BC006A59ED /* Resources */,
@@ -105,7 +105,7 @@
 		87837C7A1FDD08BC006A59ED /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				87837C7B1FDD08BC006A59ED /* gan.mlmodel */,
+				873E250720704D6C00BB9EC1 /* gan.mlmodel */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -213,9 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87837C881FDD0F06006A59ED /* HandwrittenImage.swift in Sources */,
+				87035F8320719D1C001DC6FE /* HandwrittenImage.swift in Sources */,
+				873E250820704D6C00BB9EC1 /* gan.mlmodel in Sources */,
 				87837C791FDD08AA006A59ED /* ViewController.swift in Sources */,
-				87837C7E1FDD08BC006A59ED /* gan.mlmodel in Sources */,
 				876EAF6C1FDCE88B00205269 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X32QM25JN5;
 				INFOPLIST_FILE = Gangen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codingecho.gangen.Gangen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -371,6 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X32QM25JN5;
 				INFOPLIST_FILE = Gangen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codingecho.gangen.Gangen;
 				PRODUCT_NAME = "$(TARGET_NAME)";

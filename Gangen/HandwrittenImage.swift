@@ -64,7 +64,7 @@ class HandwrittenImage: UIView {
       NSLog("random, %f", ganInput[i].floatValue)
     }
 
-    guard let out = try? m.prediction(gan: ganInput) else {
+    guard let out = try? m.prediction(input: ganInput) else {
       fatalError("Unexpected runtime error. MLMultiArray")
     }
     
@@ -72,7 +72,7 @@ class HandwrittenImage: UIView {
       for j in 0...27 {
         let index: [NSNumber] = [0 as NSNumber, i as NSNumber, j as NSNumber]
         //NSLog("generated array, %d", out.gan_out[[1, 0, 0]])
-        let value = (out.gan_out[index].floatValue * 0.5) + 0.5
+        let value = (out.output[index].floatValue * 0.5) + 0.5
         //print(value, terminator:" ")
       }
       //print("\n")
@@ -108,7 +108,7 @@ class HandwrittenImage: UIView {
         // TODO set grayscale color from the generator
         //UIColor(white: CGFloat((1/Double(WIDTH)) * Double(j) * weight), alpha: CGFloat(1)).setStroke()
         let index: [NSNumber] = [0 as NSNumber, i as NSNumber, j as NSNumber]
-        UIColor(white: CGFloat(truncating: out.gan_out[index]), alpha: CGFloat(1)).setStroke()
+        UIColor(white: CGFloat(truncating: out.output[index]), alpha: CGFloat(1)).setStroke()
         
         //draw the stroke
         plusPath.stroke()
